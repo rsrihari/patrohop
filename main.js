@@ -67,14 +67,17 @@ restartGame: function() {
 },
 
 addOnePipe: function(x, y) {  
-		this.weedcount+=1;
 		var percentage=100+(this.score-(this.weedcount)*9)*2;
+		if(percentage<0) this.restartGame();
+		this.weedcount+=1;
+		percentage-=18;
 	 	this.myHealthBar.setPercent(percentage);
 		var pos = Math.floor(Math.random() * 4) ;
 		var weed=this.weeds.getFirstDead();
 		weed.reset(750, pos * 80 + 30, 'pipe');
     game.physics.arcade.enable(weed);
-    weed.body.velocity.x = -700; 
+    weed.body.velocity.x = -1*(500+(this.weedcount)*30); 
+		if(weed.body.velocity.x<-1000) weed.body.velocity.x = -1000;
     weed.checkWorldBounds = true;
     weed.outOfBoundsKill = true;
 },

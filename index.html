@@ -4,16 +4,31 @@
 <head>  
     <meta charset="utf-8" />
     <title> Keep Patro High! </title>
-
+		<style>
+		.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+		</style>
     <script type="text/javascript" src="phaser.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
 </head>
 
 <body style="background-color: #71c5cf">
-		<div style="font-family: 'Arial'; color:white; font-size:30px; ">Enter to start game. Space bar to fly.</div>
 		<div id="score" style="font-family: 'Arial'; color:white; font-size:30px; ">High Score : 0</div>
-    <center><div id="gameDiv" style="border:1px solid black;"> </div></center><br>
-		<center><div style="font-family: 'Arial'; color:white; font-size:40px; ">GET PATRO HIGH!</div><center>
-		<center><div id="gameover" style="font-family: 'Arial'; color:red; font-size:30px; text-decoration: 'blink'"></div><center>
+    <center><div id="gameDiv" style="border:1px solid white;"> </div></center><br>
+		<center><div style="font-family: 'Arial'; color:green; font-size:40px; ">KEEP PATRO HIGH!</div><center>
+		<center><div id="rules" style="font-family: 'Arial'; color:white; font-size:30px;">Rules : Stay within the limits. Feed Patro enough grass to keep him going.</div><center>
+<center><div id="gameover" class="blink" style="font-family: 'Arial'; color:red; font-size:30px;">Enter to start game. Space bar to fly.</div><center>
 </body>  
 </html> 
