@@ -4,11 +4,11 @@
 <head>  
     <meta charset="utf-8" />
     <title> Keep Patro High! </title>
-	<meta property="og:url"           content="http://rsrihari.github.io/patrohop" />
+	<meta property="og:url"           content="http://rsrihari.github.io/" />
 	<meta property="og:type"          content="website" />
 	<meta property="og:title"         content="Keep Patro High" />
 	<meta property="og:description"   content="Guide Patro to grass and never let him be sober." />
-	<meta property="og:image"         content="https://scontent.fdel1-1.fna.fbcdn.net/hphotos-xtp1/v/t1.0-9/12729033_1700369326888359_5067200196255720365_n.jpg" />
+	<meta property="og:image"         content="http://images.clipartpanda.com/weed-symbol-png-marijuana_display.png" />
 		<style>
 		.blink {
   animation: blink-animation 1s steps(5, start) infinite;
@@ -32,14 +32,6 @@
 <body style="background-color: #71c5cf">
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=1048116878572688";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 
 		<div id="score" style="font-family: 'Arial'; color:white; font-size:30px; ">High Score : 0</div>
     <center><div id="gameDiv" style="border:1px solid white;"> </div></center><br>
@@ -47,7 +39,6 @@
 		<center><div id="rules" style="font-family: 'Arial'; color:white; font-size:30px;">Rules : Stay within the limits. Feed Patro enough grass to keep him going.</div><center>
 <center><div id="gameover" class="blink" style="font-family: 'Arial'; color:red; font-size:30px;">Enter to start game. Space bar to fly.</div><center>
 
-<div class="fb-share-button" data-href="http://rsrihari.github.io/patrohop/" data-layout="button_count"></div>
 
 </body>  
 </html> 
